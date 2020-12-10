@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "906962026751",
+    "firebase_url": "https://greenleaf-63767-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "greenleaf-63767",
+    "storage_bucket": "greenleaf-63767.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906962026751:android:03a8929662039c6cb68cca",
+        "android_client_info": {
+          "package_name": "com.mathiasyde.greenleaf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906962026751-jm2llcaia2qmeptfenp6dff5j0v30i6s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8oqukyhBFZ2behBzVAyxGfKKqmrg4kD4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906962026751-jm2llcaia2qmeptfenp6dff5j0v30i6s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
