@@ -10,14 +10,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'sprout',
+      title: "Sprout",
       theme: ThemeData(
         primaryColor: Color(0xFF00FF00),
         textTheme: GoogleFonts.poppinsTextTheme(
           Theme.of(context).textTheme,
         ),
       ),
-      home: Homepage(title: 'Greenleaf'),
+      home: Homepage(title: "Sprout"),
     );
   }
 }
