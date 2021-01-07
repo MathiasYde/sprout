@@ -41,7 +41,20 @@ class OverviewState extends State<Overview> {
 
   @override
   Widget build(BuildContext context) {
-    double totalProduction = widget.rooms.fold(0, (value, Room room) => value += room.devices.fold(0, (value, Device device) => value += device.current));
+    double totalProduction = widget.rooms.fold(
+      0,
+      (
+        value,
+        Room room,
+      ) =>
+          value += room.devices.fold(
+              0,
+              (
+                value,
+                Device device,
+              ) =>
+                  value += device.current),
+    );
 
     return Padding(
       padding: const EdgeInsets.all(8.0),
@@ -62,7 +75,11 @@ class OverviewState extends State<Overview> {
               ),
             ),
           ),
-          AnimatedValue(value: totalProduction, builder: (value) => Text("${value.toStringAsFixed(2)} kW", textScaleFactor: 3),),
+          AnimatedValue(
+            value: totalProduction,
+            builder: (value) =>
+                Text("${value.toStringAsFixed(2)} kW", textScaleFactor: 3),
+          ),
           Text("current production"),
         ],
       ),

@@ -55,19 +55,27 @@ class HomePageState extends State<Homepage> {
                 .map<Device>((d) => Device.load(d))
                 .toList();
 
+            // List<Room> rooms = snapshot.data.snapshot.value["rooms"]
+            //     .map<Room>(
+            //       (r) => Room(
+            //         name: r["name"],
+            //         devices: r["devices"]
+            //             .map<Device>(
+            //               (d) => devices.firstWhere(
+            //                 (element) => element.name == d,
+            //                 orElse: () => Device.none(),
+            //               ),
+            //             )
+            //             .toList(),
+            //       ),
+            //     )
+            //     .toList();
+
+            // rooms = new List<Room>();
+
             List<Room> rooms = snapshot.data.snapshot.value["rooms"]
                 .map<Room>(
-                  (r) => Room(
-                    name: r["name"],
-                    devices: r["devices"]
-                        .map<Device>(
-                          (d) => devices.firstWhere(
-                            (element) => element.name == d,
-                            orElse: () => Device.none(),
-                          ),
-                        )
-                        .toList(),
-                  ),
+                  (room) => Room.load(room, devices),
                 )
                 .toList();
 
