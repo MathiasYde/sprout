@@ -33,7 +33,7 @@ class ValuesPageState extends State<ValuesPage> {
               children: [
                 for (int i = 0; i < devices.length; ++i)
                   ListTile(
-                    leading: Text(devices[i].icon),
+                    leading: devices[i].icon,
                     title: Text(devices[i].name),
                     trailing: FractionallySizedBox(
                       widthFactor: 0.25,
